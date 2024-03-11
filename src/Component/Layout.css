@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt@-10..0&family=Oswald&display=swap');
+*{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    margin: 0;
+    padding: 0;
+}
+.layout-container{
+    margin:38px 480px;
+}
+
+.layout-head h1{
+   font-weight:800;
+   font-size:25px;
+   letter-spacing:2px;
+}
+.tracker-hist{
+    display: flex;
+    flex-direction: column;
+    gap:0rem;
+    margin:15px 0px 15px 10px;
+}
+.tracker-hist h3{
+    margin: 0;
+    padding: 0;
+   text-align: start;
+   
+}
+.income-expense-folder{
+    display: flex;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+    justify-content: space-evenly;
+    padding:10px 0;
+}
+
+.income-folder,
+.expense-folder{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.income-folder h3,
+.expense-folder h3{
+    font-size:16px;
+    letter-spacing:1px;
+}
+.income-folder{
+   border-right:1px solid black;
+   padding-right:80px;
+}
+#green-color{
+    color:rgb(18, 213, 18);
+}
+#red-color{
+    color:red;
+}
+.History_table{
+    display: flex;
+    flex-direction: column;
+    margin-top:1.3rem;
+}
+.history_head h3{
+    text-align: start;
+    font-size:17px;
+    padding-bottom:5px;
+    border-bottom:1px solid black;
+}
+.history_table{
+    display: flex;
+    flex-direction: column;
+}
+.list-table{
+    display: flex;
+    justify-content: space-between;
+    margin-top:.5rem;
+    padding:7px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.list-table.positive {
+    border-right: 3px solid rgb(18, 213, 18); 
+}
+
+.list-table.negative {
+    border-right:3px solid red;
+}
+.list-head {
+    padding-left:6px;
+}
+.list-details{
+    padding-right: 6px;
+}
+
+
+.input_data{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin:15px 0px;
+}
+.input_head h3{
+    font-size:17px;
+    letter-spacing:1px;
+    padding-bottom:2px;
+    border-bottom:1px solid black;
+}
+.input_text{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+   margin-top:.8rem;
+   display: flex;
+   flex-direction: column;
+   gap:.3rem;
+}
+.text h3{
+    font-size:16px;
+    letter-spacing: 1px;
+}
+.text input{
+    width: 100%;
+    height:30px;
+}
+input[type="text"],
+input[type="number"] {
+    font-size: 14px;
+    padding-left: 7px;
+    letter-spacing: 1px;
+    outline: none;
+}
+input[type="number"] {
+   appearance: none;
+   outline: none;
+}
+
+.text input::placeholder{
+    color:black;
+}
+
+.submit button{
+    margin-top:10px;
+    width: 103%;
+    padding:6px 0;
+    font-size:17px;
+    background-color: rgb(5, 69, 138);
+    color:white;
+    background-color: rgb(4, 96, 177);
+    border:none;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .layout-container{
+        margin:60px;
+    }
+}
