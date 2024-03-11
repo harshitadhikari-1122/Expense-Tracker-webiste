@@ -1,2 +1,3 @@
 # Expense-Tracker-webiste
-I have created an expense tracker page where users can track their expenses.
+This project utilizes React.js and CSS for creating an expense tracker page, allowing users to conveniently track their expenses.
+
